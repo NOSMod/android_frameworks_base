@@ -4425,6 +4425,15 @@ public final class Settings {
                 BOOLEAN_VALIDATOR;
 
         /**
+         * Allow all rotations.
+         * @hide
+         */
+        public static final String ACCELEROMETER_ROTATION_ANGLES = "accelerometer_rotation_angles";
+        /** @hide */
+        private static final Validator ACCELEROMETER_ROTATION_ANGLES_VALIDATOR =
+                ANY_STRING_VALIDATOR;
+
+        /**
          * Whether the phone vibrates on call connect
          * @hide
          */
@@ -4976,6 +4985,7 @@ public final class Settings {
             SMART_PIXELS_PATTERN,
             SMART_PIXELS_SHIFT_TIMEOUT,
             SMART_PIXELS_ON_POWER_SAVE,
+            ACCELEROMETER_ROTATION_ANGLES,
         };
 
         /**
@@ -5164,6 +5174,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(SMART_PIXELS_PATTERN);
             PRIVATE_SETTINGS.add(SMART_PIXELS_SHIFT_TIMEOUT);
             PRIVATE_SETTINGS.add(SMART_PIXELS_ON_POWER_SAVE);
+            PRIVATE_SETTINGS.add(ACCELEROMETER_ROTATION_ANGLES);
         }
 
         /**
@@ -5328,6 +5339,7 @@ public final class Settings {
             VALIDATORS.put(SMART_PIXELS_PATTERN, SMART_PIXELS_PATTERN_VALIDATOR);
             VALIDATORS.put(SMART_PIXELS_SHIFT_TIMEOUT, SMART_PIXELS_SHIFT_TIMEOUT_VALIDATOR);
             VALIDATORS.put(SMART_PIXELS_ON_POWER_SAVE, SMART_PIXELS_ON_POWER_SAVE_VALIDATOR);
+            VALIDATORS.put(ACCELEROMETER_ROTATION_ANGLES, ACCELEROMETER_ROTATION_ANGLES_VALIDATOR);
         }
 
         /**
