@@ -22,4 +22,11 @@
 
     <!-- Zen QS panel -->
     <color name="zen_qs_panel_close_button_color">@android:color/white</color>
+
+    <!-- Navigation button ripple color -->
+    <color name="navbutton_ripple_color">#FFFFFFFF</color>
+
+    <!-- Navigation button ripple color for LightNavigationBar -->
+    <color name="navbutton_ripple_color_dark">#ff000000</color>
+
 </resources>
