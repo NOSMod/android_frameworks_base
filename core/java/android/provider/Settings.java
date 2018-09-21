@@ -4614,16 +4614,6 @@ public final class Settings {
                 ANY_INTEGER_VALIDATOR;
 
         /**
-         * @hide
-         */
-        public static final String OMNI_USE_BOTTOM_GESTURE_NAVIGATION =
-                "use_bottom_gesture_navigation";
-
-        /** @hide */
-        private static final Validator OMNI_USE_BOTTOM_GESTURE_NAVIGATION_VALIDATOR =
-                BOOLEAN_VALIDATOR;
-
-        /**
          * volume answer
          * @hide
          */
@@ -4771,7 +4761,6 @@ public final class Settings {
             OMNI_QS_LAYOUT_ROWS_LANDSCAPE,
             OMNI_QS_QUICKBAR_COLUMNS,
             OMNI_QS_PANEL_BG_ALPHA,
-            OMNI_USE_BOTTOM_GESTURE_NAVIGATION,
             BUTTON_BRIGHTNESS,
             BUTTON_BACKLIGHT_TIMEOUT,
             BUTTON_BACKLIGHT_ON_TOUCH_ONLY,
@@ -4947,7 +4936,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(OMNI_QS_LAYOUT_ROWS_LANDSCAPE);
             PRIVATE_SETTINGS.add(OMNI_QS_QUICKBAR_COLUMNS);
             PRIVATE_SETTINGS.add(OMNI_QS_PANEL_BG_ALPHA);
-            PRIVATE_SETTINGS.add(OMNI_USE_BOTTOM_GESTURE_NAVIGATION);
             PRIVATE_SETTINGS.add(BUTTON_BRIGHTNESS);
             PRIVATE_SETTINGS.add(BUTTON_BACKLIGHT_TIMEOUT);
             PRIVATE_SETTINGS.add(BUTTON_BACKLIGHT_ON_TOUCH_ONLY);
@@ -5098,8 +5086,6 @@ public final class Settings {
             VALIDATORS.put(OMNI_QS_LAYOUT_ROWS_LANDSCAPE, OMNI_QS_LAYOUT_ROWS_LANDSCAPE_VALIDATOR);
             VALIDATORS.put(OMNI_QS_QUICKBAR_COLUMNS, OMNI_QS_QUICKBAR_COLUMNS_VALIDATOR);
             VALIDATORS.put(OMNI_QS_PANEL_BG_ALPHA, OMNI_QS_PANEL_BG_ALPHA_VALIDATOR);
-            VALIDATORS.put(OMNI_USE_BOTTOM_GESTURE_NAVIGATION,
-                    OMNI_USE_BOTTOM_GESTURE_NAVIGATION_VALIDATOR);
             VALIDATORS.put(BUTTON_BRIGHTNESS, BUTTON_BRIGHTNESS_VALIDATOR);
             VALIDATORS.put(BUTTON_BACKLIGHT_TIMEOUT, BUTTON_BACKLIGHT_TIMEOUT_VALIDATOR);
             VALIDATORS.put(BUTTON_BACKLIGHT_ON_TOUCH_ONLY, BUTTON_BACKLIGHT_ON_TOUCH_ONLY_VALIDATOR);
